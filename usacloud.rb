@@ -2,25 +2,25 @@
 class Usacloud < Formula
   desc ""
   homepage "https://github.com/sacloud/usacloud"
-  version "0.0.99"
+  version "0.0.100"
   license "Apache 2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.99/usacloud_darwin-amd64.zip"
-    sha256 "99b4cee8e9464537eabcd06e71e0e7b34544c4d7e62913e753698b974dfc1993"
+    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.100/usacloud_darwin-amd64.zip"
+    sha256 "44488ee3d3af61782f31cf244fe2d56fffdeb041dda63b50dafb30d83ac61ace"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.99/usacloud_linux-amd64.zip"
-    sha256 "a10954de75343f73429d637dd5ff686506d73a2f89e4ec87359d81ac6203b4ee"
+    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.100/usacloud_linux-amd64.zip"
+    sha256 "3daf505689bc07480a957252bcadedb742ca0977660a7791c29b3a76d6ef732f"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.99/usacloud_linux-arm.zip"
-    sha256 "169e09d88d02e1a27853d9015428315869abb12b15ec085864124ddcab082e7a"
+    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.100/usacloud_linux-arm.zip"
+    sha256 "66aa8876c14f8938595a9da63d8749e73f6d0c96032c624b1e0f2a886fae1ff8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.99/usacloud_linux-arm64.zip"
-    sha256 "8a243b8ac309f9025d3fdde9f9c438bcb7ef3b6859c6ecf9d5c30cacb2b9f23a"
+    url "https://github.com/yamamoto-febc/usacloud/releases/download/v0.0.100/usacloud_linux-arm64.zip"
+    sha256 "f4857fbc118ace0d5394ff1885745edf387af4126728b47f25e4b4aa027f84d5"
   end
 
   def install
